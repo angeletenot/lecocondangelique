@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+//----------------------------------------
+//   Base
+//----------------------------------------
+
+// Base color
+$clr-light     : #fff;
+$clr-error     : #F2DEDE;
+$clr-success   : #DFF0D8;
+$clr-alert     : #FCF8E3;
+$clr-notice    : #D9EDF7;
+
+$clr-0-darken  : #202020;
+$clr-0-dark    : #333;
+$clr-0         : #151A25;
+$clr-0-lighter : #9b9b9b;
+$clr-0-light   : #C9C9C9;
+$clr-0-lighten : #eeeeee;
+
+$clr-1         : #FEC703;
+$clr-1-light   : tint($clr-1, 50%);
+$clr-1-lighten : tint($clr-1, 85%);
+$clr-1-dark    : shade($clr-1, 15%);
+$clr-1-darken  : shade($clr-1, 30%);
+
+$clr-2         : #90CEC9;
+$clr-2-light   : tint($clr-2, 50%);
+$clr-2-lighten : tint($clr-2, 85%);
+$clr-2-dark    : shade($clr-2, 15%);
+$clr-2-darken  : shade($clr-2, 30%);
+
+$clr-3         : #ED8B0A;
+$clr-3-light   : tint($clr-3, 50%);
+$clr-3-lighten : tint($clr-3, 85%);
+$clr-3-dark    : shade($clr-3, 15%);
+$clr-3-darken  : shade($clr-3, 30%);
+
+
+// CSS3
+$rad   : .3rem;
+$trans : all .3s cubic-bezier(.17,.67,.83,.67);
+$easing: cubic-bezier(.17,.67,.83,.67);
+
+// Font
+$em-base: 16px !default;
+$base-font-family   : 'Open Sans', sans-serif;
+$secondary-font-family : 'Life Savers', serif;
+$title-font-family : 'Palanquin', sans-serif;
+$title-font-family-dark : 'Palanquin Dark', sans-serif;
+$code-font          : 'Source Code Pro', Consolas, monospace;
+$base-font-size     : em(16, $em-base);
+$base-line-height   : 1.625em;
+$base-font-color    : $clr-0-darken;
+
+$header-font-family : $base-font-family;
+$header-line-height : 1.25em;
+$header-font-color  : $clr-0-darken;
+
+$font-size-XXL : em(32, $em-base);
+$font-size-XL  : em(28, $em-base);
+$font-size-L   : em(24, $em-base);
+$font-size-M   : em(20, $em-base);
+$font-size-S   : em(18, $em-base);
+$font-size-XS  : em(16, $em-base);
+
+// Link
+$base-link-color  : $clr-0-darken;
+$base-link-color-hover : $clr-3;
+
+//  Grid
+$wrap-max-width : em(1200, $em-base);
+$wrap-min-width : em(320, $em-base);
+$gutter-width   : rem(20);
+
+// Border color
+$base-border-color : $clr-0-light;
+
+// Forms
+$form-border-color       : $clr-2;
+$form-border-color-hover : shade($clr-2, 20%) ;
+$form-border-color-focus : $clr-1;
+$form-border-radius      : 0;
+$form-box-shadow         : none;
+$form-box-shadow-focus   : $form-box-shadow, 0 0 5px rgba(darken($form-border-color-focus, 5), 0.7);
+$color-mixin-placeholder : #D8D8D8;
+$form-font-size          : em(14);
+$form-font-family        : $base-font-family;
+
+// Spacing
+$spacer   : rem(26);
+$spacer-n : 0;
+$spacer-s : $gutter-width;
+$spacer-m : $spacer * 2;
+$spacer-l : $spacer * 3;
+
+// Breakpoints (choose unit you prefer)
+$mq-s      : em(480, $em-base);
+$mq-s-up   : em(481, $em-base);
+$mq-m      : em(768, $em-base);
+$mq-m-up   : em(769, $em-base);
+$mq-l      : em(1024, $em-base);
+$mq-l-up   : em(1025, $em-base);

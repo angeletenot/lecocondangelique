@@ -1,0 +1,41 @@
+.clearfix { clear: both; }
+
+.center,
+.aligncenter { 
+  display: block;
+  margin: 0 auto; 
+}
+.left,
+.alignleft { float: left; }
+.right,
+.alignright { float: right; }
+
+img.alignleft { margin-right: em(15); }
+img.alignright { margin-left: em(15); }
+
+.flexPush { // for a line with 3 elements, simulate a third element when only two: avoid centering last line
+  width: 32%;
+}
+
+
+.page-content-wrapper {
+  &.with-sidebar {
+    > .wrapper {
+      display: flex;
+      @media (max-width: em(768)) {
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+.page-sidebar {
+  flex-shrink: 0;
+  width: em(380);
+  padding-left: em(100);
+  @media (max-width: em(768)) {
+    width: 100%;
+    padding-left: 0;
+    margin-top: em(30);
+  }
+}

@@ -1,0 +1,113 @@
+%button {
+  display: inline-block;
+  vertical-align: middle;
+  width: auto;
+  margin: 0;
+  padding: rem(7) rem(25);
+  margin: 0;
+  position: relative;
+  white-space: nowrap;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: em(15);
+  line-height: 1;
+  font-weight: 700;
+  border: rem(3) solid $clr-2;
+  transition: $trans;
+  -webkit-user-drag: none;
+  user-select: none;
+  -webkit-appearance: none;
+  &Truncate { @extend %truncate }
+  + [class*=button] {
+    @media (min-width: $mq-s-up) {
+      margin-left: rem(10);
+    }
+  }
+  &:disabled,
+  &.is-disabled {
+    cursor: default;
+    opacity: 0.35;
+
+  }
+}
+
+/**
+ * Base style
+ */
+
+.button,
+.btn {
+  color: $clr-2;
+  @extend %button;
+  // States
+  &:hover, &:focus {
+    color: $clr-light;
+    background-color: $clr-2;
+  }
+  &:disabled:hover,
+  &.is-disabled:hover,
+  &.is-disabled:focus {
+    color: $clr-light;
+    background-color: $clr-1;
+    outline: none;
+  }
+  &.is-active{
+    background: shade($clr-1, 40%);
+  }
+}
+
+.buttonSecondary {
+  color: $base-font-color;
+  background: $base-border-color;
+  @extend %button;
+  // States
+  &:hover, &:focus {
+    color: $clr-light;
+    background: shade($base-border-color, 20%);
+  }
+  &:disabled:hover,
+  &.is-disabled:hover,
+  &.is-disabled:focus {
+    color: $base-font-color;
+    background: $base-border-color;
+    outline: none;
+  }
+  &.is-active {
+    color: $clr-light;
+    background: shade($base-border-color, 40%);
+  }
+}
+
+.btn-wrapper {
+  text-align: center;
+}
+
+/**
+ * Modifier
+ */
+
+.button--small {
+  padding: em(3, 13) em(10, 13);
+  font-size: em(13);
+}
+
+.button--big {
+  padding: em(15, 20) em(30, 20);
+  font-size: em(20);
+  line-height: 1.333;
+}
+
+.button--block {
+  display: block;
+  width: 100%;
+}
+
+.button--mobileFull {
+  @media (max-width: $mq-s-up) {
+    display: block;
+    width: 100%;
+  }
+}

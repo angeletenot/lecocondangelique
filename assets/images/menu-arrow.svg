@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="8px" viewBox="0 0 15 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Group 3 Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 15 0 15 8 0 8"></polygon>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="MENU-/-centré" transform="translate(-57.000000, -20.000000)">
+            <g id="Group-3-Copy" transform="translate(57.000000, 20.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-2"></g>
+                <path d="M7.5,8 C7.26639412,8 7.03242294,7.91524605 6.85434183,7.74556447 L0.267532618,1.482456 C-0.0891775393,1.1434402 -0.0891775393,0.593407906 0.267532618,0.254392106 C0.624060127,-0.0847973688 1.20250409,-0.0847973688 1.5590316,0.254392106 L7.5,5.90355548 L13.4409684,0.254392106 C13.7974959,-0.0847973688 14.3759399,-0.0847973688 14.7324674,0.254392106 C15.0891775,0.593407906 15.0891775,1.1434402 14.7324674,1.482456 L8.14565817,7.74556447 C7.96757706,7.91524605 7.73360588,8 7.5,8" id="Fill-1" fill="#000000" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="354px" viewBox="0 0 1440 354" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Path 2</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="FOOTER-/-simple" transform="translate(0.000000, -14.000000)" fill="#202020">
+            <g id="-" transform="translate(0.000000, 14.000000)">
+                <path d="M0,6 C31.6666667,11.3333333 55.3333333,14 71,14 C94.5,14 171,0 200,0 C229,0 559,14 596,14 C633,14 850,6 910,6 C970,6 1186.5,19.5 1206,19.5 C1219,19.5 1297,15 1440,6 L1440,354 L0,354 L0,6 Z" id="Path-2"></path>
+            </g>
+        </g>
+    </g>
+</svg>

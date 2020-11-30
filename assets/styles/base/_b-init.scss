@@ -1,0 +1,34 @@
+html,
+body {
+  height:100%;
+  margin:0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  position: relative;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  font-weight: 300;
+  line-height: 1.3;
+  color: $base-font-color;
+  background: $clr-light;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[tabindex="-1"]:focus {
+  outline: none !important;
+}
+
+

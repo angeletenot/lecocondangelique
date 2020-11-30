@@ -1,0 +1,11 @@
+header {
+  padding: em(20) 0;
+
+  > .wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+}

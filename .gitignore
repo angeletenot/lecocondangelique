@@ -1,0 +1,44 @@
+# Wordpress files #
+###################
+.htaccess
+xmlrpc.php
+sitemap.xml
+sitemap.xml.gz
+readme.html
+license.txt
+content/upgrade/*
+content/cache/*
+content/backup/*
+wp-config.php
+wordpress
+
+# Misc #
+###################
+_assets
+node_modules
+ai-cache/*
+
+# Configuration #
+/env-config
+###################
+
+# Text Editors #
+###################
+.idea/**
+
+
+# Other Stuff #
+###################
+.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db
+
+# Compiled files #
+###################
+content/themes/coconangelique/style.css
+content/themes/coconangelique/scripts
+content/themes/coconangelique/images
+content/themes/coconangelique/fonts
+assets/styles/components/_icons.scss
+assets/styles/vendor
