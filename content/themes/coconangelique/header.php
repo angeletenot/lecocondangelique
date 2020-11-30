@@ -21,24 +21,9 @@
 
     <header id="header" role="banner">
       <div class="wrapper">
-        <?php 
-        if ( !is_front_page() ) { ?>
-          <a href="<?php echo get_home_url(); ?>">
-            <?php 
-            $image = get_field('logo_black', 'option');
-            if( !empty( $image ) ): ?>
-                <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" class="header-logo"/>
-            <?php endif; ?>
-          </a>
-        <?php } ?>
-        
         <nav id="navigation" class="main-menu menu menu-desktop">
           <?php nav_header() ?>
         </nav>
-        <div class="search-toggle"><i class="icon-search"></i></div>
-        <div class="search-popup">
-           <?php get_search_form(); ?>
-        </div>
       </div>
     </header>
 

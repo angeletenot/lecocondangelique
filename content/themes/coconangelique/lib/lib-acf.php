@@ -16,3 +16,10 @@ function my_acf_op_init() {
         ));
     }
 }
+
+
+function my_acf_google_map_api( $api ){
+    $api['key'] = 'AIzaSyA_oRWidbtnpUMkvb2kB581XmXdRWS1dlM';
+    return $api;
+}
+add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');

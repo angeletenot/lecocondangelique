@@ -18,19 +18,19 @@ $clr-0-lighter : #9b9b9b;
 $clr-0-light   : #C9C9C9;
 $clr-0-lighten : #eeeeee;
 
-$clr-1         : #FEC703;
+$clr-1         : #B99B7B;
 $clr-1-light   : tint($clr-1, 50%);
 $clr-1-lighten : tint($clr-1, 85%);
 $clr-1-dark    : shade($clr-1, 15%);
 $clr-1-darken  : shade($clr-1, 30%);
 
-$clr-2         : #90CEC9;
+$clr-2         : #FFAE85;
 $clr-2-light   : tint($clr-2, 50%);
 $clr-2-lighten : tint($clr-2, 85%);
 $clr-2-dark    : shade($clr-2, 15%);
 $clr-2-darken  : shade($clr-2, 30%);
 
-$clr-3         : #ED8B0A;
+$clr-3         : #E3DADD;
 $clr-3-light   : tint($clr-3, 50%);
 $clr-3-lighten : tint($clr-3, 85%);
 $clr-3-dark    : shade($clr-3, 15%);
@@ -45,9 +45,8 @@ $easing: cubic-bezier(.17,.67,.83,.67);
 // Font
 $em-base: 16px !default;
 $base-font-family   : 'Open Sans', sans-serif;
-$secondary-font-family : 'Life Savers', serif;
-$title-font-family : 'Palanquin', sans-serif;
-$title-font-family-dark : 'Palanquin Dark', sans-serif;
+$secondary-font-family : 'Signika', serif;
+$title-font-family : 'Oswald', sans-serif;
 $code-font          : 'Source Code Pro', Consolas, monospace;
 $base-font-size     : em(16, $em-base);
 $base-line-height   : 1.625em;
@@ -69,7 +68,7 @@ $base-link-color  : $clr-0-darken;
 $base-link-color-hover : $clr-3;
 
 //  Grid
-$wrap-max-width : em(1200, $em-base);
+$wrap-max-width : em(1280, $em-base);
 $wrap-min-width : em(320, $em-base);
 $gutter-width   : rem(20);
 

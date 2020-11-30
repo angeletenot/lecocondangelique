@@ -1,28 +1,7 @@
 .blog-header {
   text-align: center;
 
-  .blog-logo {
-    width: em(310);
-    height: auto;
-    @media (max-width: em(768)) {
-      width: em(180);
-    }
-  }
-
-  .page-title {
-    position: relative;
-    font-family: $title-font-family-dark;
-    font-size: em(31);
-    font-weight: 400;
-    letter-spacing: rem(8);
-    margin-top: rem(10);
-    &:before,
-    &:after {
-      content: '.';
-      color: $clr-1;
-      margin: 0 rem(10);
-    }
-  }
+  
 
 }
 
@@ -34,20 +13,5 @@
   }
   .section-title {
     margin-bottom: rem(50);
-  }
-}
-
-.category-form {
-  display: inline-block;
-  margin: em(10) em(20);
-}
-
-.category-list {
-  margin: em(40) 0 em(20);
-}
-
-.archive {
-  .category-list {
-    margin-bottom: rem(60);
   }
 }

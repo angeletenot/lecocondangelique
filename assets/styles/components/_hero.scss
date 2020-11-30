@@ -64,7 +64,7 @@
   }
 
   .hero-title {
-    font-family: $title-font-family-dark;
+    font-family: $title-font-family;
     font-weight: 700;
     font-size: em(30);
     color: $clr-light;
@@ -99,7 +99,7 @@
     width: 33.333%;
     text-align: center;
     &-title {
-      font-family: $title-font-family-dark;
+      font-family: $title-font-family;
       font-weight: 400;
       font-size: em(23);
       color: $clr-light;

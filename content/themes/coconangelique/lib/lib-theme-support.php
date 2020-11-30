@@ -15,9 +15,8 @@ if ( ! function_exists('custom_theme_features') ) {
     // Add theme support for Featured Images
     add_theme_support( 'post-thumbnails' );
      // Set custom thumbnail dimensions
-    add_image_size('hero', 1440, 850, true);
+    add_image_size('hero', 1440, 570, true);
     add_image_size('news-thumb', 1200, 490, true);
-    add_image_size('news-thumb-sm', 385, 385, true);
 
     // Add theme support for HTML5 Semantic Markup
     add_theme_support( 'html5', array( 'search-form', 'comment-form', 'comment-list', 'gallery', 'caption' ) );
