@@ -16,6 +16,7 @@ if ( ! function_exists('custom_theme_features') ) {
     add_theme_support( 'post-thumbnails' );
      // Set custom thumbnail dimensions
     add_image_size('hero', 1440, 570, true);
+    add_image_size('portrait', 425, 540, true);
     add_image_size('news-thumb', 1200, 490, true);
 
     // Add theme support for HTML5 Semantic Markup

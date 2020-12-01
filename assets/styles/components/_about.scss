@@ -1,0 +1,20 @@
+.section-about {
+  background-color: $clr-0-light;
+  background-image: url(images/mandala.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  padding: em(40) 0 em(60);
+
+  .section-tx {
+    margin-bottom: rem(50);
+  }
+
+  .about-img {
+    img {
+      position: relative;
+      box-shadow: -9px -8px 23px 0 rgba(0,0,0,0.48), inset 0 1px 3px 0 rgba(0,0,0,0.50);
+      margin-top: em(-160);
+    }
+  }
+
+}

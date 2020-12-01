@@ -5,19 +5,9 @@
   font-family: $title-font-family;
 
   > li {
-    padding: 0 em(10);
-    &.has-submenu {
-      &:after {
-        content: url(images/menu-arrow.svg);
-        display: inline-block;
-        margin-left: em(12);
-      }
-    }
+    padding: 0 em(30);
     > a {
-      font-size: em(22);
-      @media (max-width: em(1400)) {
-        font-size: em(18);
-      }
+      font-size: em(22);    
     }
     a {
       position: relative;
@@ -26,61 +16,11 @@
       &:focus {
         color: initial;
       }
-      &:hover,
-      &.is-active {
+      &:hover {
        font-weight: 700;
-       margin: 0 rem(-2);
-       &:before {
-        opacity: 1;
-       }
-      }
-      &:before {
-        content: '';
-        position: absolute;
-        bottom: rem(2);
-        left: rem(-3);
-        display: block;
-        width: calc( 100% + 6px );
-        border-bottom: rem(7) solid $clr-2;
-        z-index: -1;
-        opacity: 0;
-        transition: all .3s;
+       margin: 0 rem(-3);
       }
     }
-  }
-
-  .sub-menu {
-    @extend %list-reset;
-    position: absolute;
-    opacity: 0;
-    overflow: hidden;
-    background: $clr-light;
-    margin-top: em(10);
-    padding: em(10) 0;
-    box-shadow: rgba($clr-0-darken, .3) 0 em(2) em(4) 0;
-    transition: all .3s;
-    z-index: -10;
-
-    &.is-active {
-      opacity: 1;
-      z-index: 10;
-    }
-
-    > li {
-      padding: em(5) em(35);
-      @media (max-width: em(1400)) {
-        padding: em(5) em(20);
-      }
-      a {
-        &:before {
-          border-color: $clr-1;
-        }
-        &:hover:before {
-          opacity: 1;
-        }
-      }
-    }
-
   }
 
 }

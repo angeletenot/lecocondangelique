@@ -11,11 +11,11 @@ $clr-success   : #DFF0D8;
 $clr-alert     : #FCF8E3;
 $clr-notice    : #D9EDF7;
 
-$clr-0-darken  : #202020;
+$clr-0-darken  : #151A25;//
 $clr-0-dark    : #333;
-$clr-0         : #151A25;
+$clr-0         : #473A3C;//
 $clr-0-lighter : #9b9b9b;
-$clr-0-light   : #C9C9C9;
+$clr-0-light   : #EFEFEF;//
 $clr-0-lighten : #eeeeee;
 
 $clr-1         : #B99B7B;
@@ -39,14 +39,15 @@ $clr-3-darken  : shade($clr-3, 30%);
 
 // CSS3
 $rad   : .3rem;
-$trans : all .3s cubic-bezier(.17,.67,.83,.67);
+$trans : all .3s;
 $easing: cubic-bezier(.17,.67,.83,.67);
 
 // Font
 $em-base: 16px !default;
-$base-font-family   : 'Open Sans', sans-serif;
+$base-font-family   : 'Raleway', sans-serif;
 $secondary-font-family : 'Signika', serif;
 $title-font-family : 'Oswald', sans-serif;
+$title-font-family-secondary : 'Reenie Beanie', cursive;
 $code-font          : 'Source Code Pro', Consolas, monospace;
 $base-font-size     : em(16, $em-base);
 $base-line-height   : 1.625em;
