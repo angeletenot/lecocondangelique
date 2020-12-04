@@ -1,38 +1,5 @@
 (function($) {
 
-// Déclarer les fonction ici
-
-  function menuClass() {
-    $('.menu-item').has('.sub-menu').addClass('has-submenu');
-  }
-
-  function showSubmenu() {
-    $('.menu-item').hover(
-      function() {
-        $(this).children('.sub-menu').addClass('is-active'); 
-      }, function() {
-         $(this).children('.sub-menu').removeClass('is-active');
-      }
-    );
-  }
-
-  // EASY DROPDOWN
-  function initeasydropdown() {
-    easydropdown.all({
-      behavior: {
-        useNativeUiOnMobile: true,
-        clampMaxVisibleItems: false,
-        maxVisibleItems: 8
-      }
-    });
-  }
-
-  // Submit on change
-  function submitOnChange() {
-    $('.js-autosubmit').change(function() {
-      this.submit();
-    });
-  };
 
   // Smooth scroll
   function scrollToAnchor() {
@@ -60,23 +27,51 @@
     });*/
   }
 
-  // Show searchform 
-  function toggleSearchForm() {
-    var toggle = $('.search-toggle');
-    var searchform = $('.search-popup');
-    toggle.on("click", function(e) {
-      searchform.toggleClass("is-active");
+
+  // Init sliders 
+  function initSliders() {
+    $('.js-slider').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: true,
+      prevArrow: '<div class="slick-prev"><i class="icon-slider"></i></div>',
+      nextArrow: '<div class="slick-next"><i class="icon-slider"></i></div>',
+      autoplay: false,
+      dots: true,
+      responsive: [
+      {
+        breakpoint: 480,
+        settings: {
+          dots: false,
+        }
+      }
+    ]
+    });
+
+    $('.js-testimonies-slider').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: true,
+      prevArrow: '<div class="slick-prev"><i class="icon-slider"></i></div>',
+      nextArrow: '<div class="slick-next"><i class="icon-slider"></i></div>',
+      autoplay: false,
+      dots: false,
+      responsive: [
+      {
+        breakpoint: 480,
+        settings: {
+          dots: false,
+        }
+      }
+    ]
     });
   }
 
+
   // INIT
   $(document).ready(function() {
-    menuClass();
-    showSubmenu();
-    initeasydropdown();
-    submitOnChange();
     scrollToAnchor();
-    toggleSearchForm();
+    initSliders();
   });
 
 })( jQuery );

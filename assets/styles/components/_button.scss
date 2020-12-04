@@ -76,6 +76,42 @@
   }
 }
 
+.button,
+.btn-light {
+  color: $clr-1;
+  background: $clr-light;
+  @extend %button;
+  &:after {
+    content: '';
+    width: calc( 100% - 24px);
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    border-bottom: rem(2) solid $clr-light;
+    opacity: 0;
+    transition: $trans;
+  }
+  // States
+  &:hover, &:focus {
+    color: $clr-light;
+    background-color: transparent;
+    &:after {
+      opacity: 1;
+    }
+  }
+  &:disabled:hover,
+  &.is-disabled:hover,
+  &.is-disabled:focus {
+    color: $clr-light;
+    background-color: $clr-1;
+    outline: none;
+  }
+  &.is-active{
+    background: shade($clr-1, 40%);
+  }
+}
+
 .buttonSecondary {
   color: $base-font-color;
   background: $base-border-color;

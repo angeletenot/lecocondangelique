@@ -30,7 +30,6 @@
 .footer-menu {
   a {
     font-size: em(14);
-    color: $clr-light;
     + a {
       &:before {
         content: '|';

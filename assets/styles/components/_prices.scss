@@ -1,0 +1,23 @@
+.section-prices {
+  background: $clr-0-light;
+  padding: em(55) 0;
+
+  .section-title {
+    margin-bottom: rem(45);
+  }
+
+  .prices-tx {
+    p {
+      font-size: em(25);
+      margin-top: rem(5);
+    }
+    h3,
+    h4,
+    h5 {
+      font-weight: 400;
+      font-size: em(23);
+      text-transform: uppercase;
+      margin: rem(35) 0 rem(5);
+    }
+  }
+}

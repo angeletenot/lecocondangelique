@@ -1,68 +1,143 @@
-<section id="consultations" class="section-offers">
+<section class="section-offers">
   <div class="wrapper">
-    <?php 
-      $title = get_field('offer_title'); 
-      $tx = get_field('offer_intro'); 
-      $link = get_field('offer_link'); 
+    
+    <section class="offer-section" id="kinesiologie">
+      <?php 
+        $title = get_field('offer_title_1'); 
+        $intro = get_field('offer_intro_1'); 
+        $tx = get_field('offer_tx_1'); 
+        $link = get_field('offer_link_1');
       ?>
-      
       <?php 
       if( !empty( $title ) ): ?>
-        <h2 class="section-title"><?php echo $title; ?></h2>
+        <h2 class="offer-title"><?php echo $title; ?></h2>
       <?php endif; ?>
       <?php 
-      if( !empty( $tx ) ): ?>
-        <p class="section-intro"><?php echo $tx; ?></p>
+      if( !empty( $intro ) ): ?>
+        <p class="offer-intro"><?php echo $intro; ?></p>
       <?php endif; ?>
-
-      <?php if( have_rows('offers') ): ?>
-        <div class="offers-wrapper">
-        <?php while( have_rows('offers') ): the_row(); 
-          $image = get_sub_field('offer_bg');
-          $title = get_sub_field('offer_title');
-          $duration = get_sub_field('offer_duration');
-          $price = get_sub_field('offer_price');
-          $tx = get_sub_field('offer_tx');
-          $pdf = get_sub_field('offer_pdf');
+      <div class="grid">
+        <div class="grid-2-4">
+          <?php 
+          if( !empty( $tx ) ): ?>
+            <p class="offer-text"><?php echo $tx; ?></p>
+          <?php endif; ?>
+          
+          <?php 
+          if( !empty( $link ) ): 
+            $link_url = $link['url'];
+            $link_title = $link['title'];
+            $link_target = $link['target'] ? $link['target'] : '_self';
           ?>
-          <div class="offer-item">
-            <div class="offer-header">
-              <?php if( $image ): ?>
-                <img src="<?php echo esc_url($image['sizes']['square_big']); ?>" alt="<?php echo esc_attr($image['alt']); ?>"/>
-              <?php endif; ?>
-              <div class="offer-meta">
-                <?php if( $title ): ?>
-                  <h3 class="offer-title"><?php echo $title; ?></h3>
-                <?php endif; ?>
-                <?php if( $duration ): ?>
-                  <p class="offer-duration"><?php echo $duration; ?></p>
-                <?php endif; ?>
-                <?php if( $price ): ?>
-                  <p class="offer-price"><?php echo $price; ?></p>
-                <?php endif; ?>
-              </div>
-            </div>
-            <div class="offer-details">
-              <?php echo $tx; ?>
-              <?php if( $pdf ): ?>
-                <a href="<?php echo $pdf ?>" target="_blank" class="btn">Télécharger le PDF</a>
-              <?php endif; ?>
-            </div>
-          </div>
-        <?php endwhile; ?>
+            <a class="btn" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
+          <?php endif; ?>
         </div>
-      <?php endif; ?>
-      
+        <div class="grid-2-4">
+          <?php if( have_rows('offer_img_1') ): ?>
+            <?php while( have_rows('offer_img_1') ): the_row(); 
+              $image = get_sub_field('photo');
+            ?>
+              <?php 
+              if( !empty( $image ) ): ?>
+                <img src="<?php echo esc_url($image['sizes']['square']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" class="offer-img"/>
+              <?php endif; ?>
+            <?php endwhile; ?>
+          <?php endif; ?>
+        </div>
+      </div>  
+    </section>
+
+    <section class="offer-section">
       <?php 
-      if( !empty( $link ) ): 
-        $link_url = $link['url'];
-        $link_title = $link['title'];
-        $link_target = $link['target'] ? $link['target'] : '_self';
+        $title = get_field('offer_title_2'); 
+        $intro = get_field('offer_intro_2'); 
+        $tx = get_field('offer_tx_2'); 
+        $link = get_field('offer_link_2');
       ?>
-        <div class="btn-wrapper">
-          <a class="btn" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
-        </div>
+      <?php 
+      if( !empty( $title ) ): ?>
+        <h2 class="offer-title"><?php echo $title; ?></h2>
       <?php endif; ?>
+      <?php 
+      if( !empty( $intro ) ): ?>
+        <div class="offer-intro"><?php echo $intro; ?></div>
+      <?php endif; ?>
+      <div class="grid">
+        <div class="grid-2-4">
+          <?php if( have_rows('offer_img_2') ): ?>
+            <?php while( have_rows('offer_img_2') ): the_row(); 
+              $image = get_sub_field('photo');
+            ?>
+              <?php 
+              if( !empty( $image ) ): ?>
+                  <img src="<?php echo esc_url($image['sizes']['square']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" class="offer-img"/>
+              <?php endif; ?>
+            <?php endwhile; ?>
+          <?php endif; ?>
+        </div>
+        <div class="grid-2-4">
+          <?php 
+          if( !empty( $tx ) ): ?>
+            <div class="offer-text"><?php echo $tx; ?></div>
+          <?php endif; ?>
+          
+          <?php 
+          if( !empty( $link ) ): 
+            $link_url = $link['url'];
+            $link_title = $link['title'];
+            $link_target = $link['target'] ? $link['target'] : '_self';
+          ?>
+            <a class="btn" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
+          <?php endif; ?>
+        </div>
+      </div>  
+    </section>
+
+    <section class="offer-section">
+      <?php 
+        $title = get_field('offer_title_3'); 
+        $intro = get_field('offer_intro_3'); 
+        $tx = get_field('offer_tx_3'); 
+        $link = get_field('offer_link_3');
+      ?>
+      <?php 
+      if( !empty( $title ) ): ?>
+        <h2 class="offer-title"><?php echo $title; ?></h2>
+      <?php endif; ?>
+      <?php 
+      if( !empty( $intro ) ): ?>
+        <p class="offer-intro"><?php echo $intro; ?></p>
+      <?php endif; ?>
+      <div class="grid">
+        <div class="grid-2-4">
+          <?php 
+          if( !empty( $tx ) ): ?>
+            <div class="offer-text"><?php echo $tx; ?></div>
+          <?php endif; ?>
+          
+          <?php 
+          if( !empty( $link ) ): 
+            $link_url = $link['url'];
+            $link_title = $link['title'];
+            $link_target = $link['target'] ? $link['target'] : '_self';
+          ?>
+            <a class="btn" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
+          <?php endif; ?>
+        </div>
+        <div class="grid-2-4">
+          <?php if( have_rows('offer_img_3') ): ?>
+            <?php while( have_rows('offer_img_3') ): the_row(); 
+              $image = get_sub_field('photo');
+            ?>
+              <?php 
+              if( !empty( $image ) ): ?>
+                  <img src="<?php echo esc_url($image['sizes']['square']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" class="offer-img"/>
+              <?php endif; ?>
+            <?php endwhile; ?>
+          <?php endif; ?>
+        </div>
+      </div>  
+    </section>
 
 </div>
 </section>

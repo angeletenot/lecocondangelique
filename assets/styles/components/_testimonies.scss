@@ -1,0 +1,40 @@
+.section-testimonies {
+  text-align: center;
+  background: $clr-2;
+  padding: em(30) 0;
+
+  .testimony-item {
+    font-family: Helvetica;
+    font-size: em(15);
+    color: $clr-light;
+    .testimony-name {
+      margin-top: rem(30);
+    }
+    .testimony-text {
+      display: block;
+      max-width: rem(660);
+      margin: 0 auto 0;
+    }
+  }
+
+  .testimonies-slider {
+    padding: 0 em(50);
+    margin-bottom: em(30);
+  }
+
+  .slick-next {
+    right: 0;
+  } 
+  .slick-prev {
+    left: 0;
+  }
+  .slick-arrow {
+    font-size: em(32);
+    color: $clr-light;
+    &:hover,
+    &:focus {
+      color: $clr-1;
+    }
+  }
+
+}

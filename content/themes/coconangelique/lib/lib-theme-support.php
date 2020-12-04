@@ -18,6 +18,9 @@ if ( ! function_exists('custom_theme_features') ) {
     add_image_size('hero', 1440, 570, true);
     add_image_size('portrait', 425, 540, true);
     add_image_size('news-thumb', 1200, 490, true);
+    add_image_size('square', 380, 380, true);
+    add_image_size('square-lg', 480, 480, true);
+    add_image_size('slider', 1440, 704, true);
 
     // Add theme support for HTML5 Semantic Markup
     add_theme_support( 'html5', array( 'search-form', 'comment-form', 'comment-list', 'gallery', 'caption' ) );

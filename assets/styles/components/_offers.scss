@@ -1,0 +1,80 @@
+.section-offers {
+  padding: em(20) 0 em(40);
+
+  .offer-section {
+    padding: em(25) 0;
+    &:nth-child(2) {
+      .offer-img {
+        margin-left: 0;
+        margin-right: auto;
+      }
+    }
+    .btn {
+      margin-top: rem(40);
+    }
+  }
+
+  .offer-title {
+    position: relative;
+    font-weight: 400;
+    font-size: em(42);
+    letter-spacing: rem(1.2);
+    text-align: center;
+    margin: 0 0 rem(50);
+    &:before,
+    &:after {
+      content: '';
+      position: relative;
+      display: inline-block;
+      vertical-align: middle;
+      height: rem(28);
+      width: rem(256);
+      background-image: url(images/arrow-pink-big.svg);
+      z-index: 2;
+    }
+    &:before {
+      margin-right: rem(85);
+    }
+    &:after {
+      margin-left: rem(85);
+      transform: rotate(180deg);
+    }
+  }
+
+  .offer-intro {
+    max-width: rem(930);
+    font-family: $title-font-family-secondary;
+    font-size: em(47);
+    color: $clr-2;
+    text-align: center;
+    line-height: rem(34);
+    margin: 0 auto rem(40);
+  }
+
+  .offer-img {
+    display: block;
+    margin-left: auto;
+    margin-bottom: em(20);
+  }
+
+  .offer-text {
+    p {
+      font-size: em(15);
+    }
+    h2,
+    h3,
+    h4,
+    h5 {
+      font-weight: 400;
+      font-size: em(28);
+      letter-spacing: 0;
+      line-height: rem(30);
+      margin: 0 0 rem(25);
+    }
+    img {
+      display: block;
+      margin: rem(10) auto;
+    }
+  }
+
+}

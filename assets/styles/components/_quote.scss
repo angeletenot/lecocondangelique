@@ -1,0 +1,13 @@
+.section-quote {
+  font-family: $title-font-family-secondary;
+  font-size: em(47);
+  color: $clr-light;
+  text-align: center;
+  line-height: rem(34);
+  background: $clr-2;
+  padding: rem(20) 0;
+
+  .quote {
+    margin: 0;
+  }
+}

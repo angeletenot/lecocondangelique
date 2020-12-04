@@ -1,0 +1,37 @@
+.section-contact {
+  text-align: center;
+  padding: em(55) 0;
+
+  .section-title {
+    text-transform: uppercase;
+    margin: rem(20) 0 rem(30);
+  }
+
+  .contact-img {
+    display: inline-block;
+    img {
+      max-width: em(440);
+    }
+  }
+
+  .contact-intro {
+    font-family: $title-font-family-secondary;
+    font-size: em(47);
+    color: $clr-2;
+    line-height: rem(37);
+    margin: rem(15) 0 rem(30);
+  }
+
+  .contact-tx {
+    font-size: em(15);
+  }
+
+  .btn {
+    padding: rem(16) rem(50);
+    margin-top: rem(40);
+    &:after {
+      width: calc( 100% - 100px);
+    }
+  }
+
+}

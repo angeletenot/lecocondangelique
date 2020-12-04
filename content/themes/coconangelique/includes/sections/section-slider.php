@@ -1,45 +1,37 @@
-<section id="cercles" class="section-presentation">
+<section class="section-slider">
   <div class="wrapper">
-    <div class="grid">
-      <div class="grid-2-4">
-        <?php 
-        $title = get_field('presentation_title'); 
-        $tx = get_field('presentation_tx'); 
-        $link = get_field('presentation_link'); 
-        $pdf = get_field('presentation_pdf'); 
+    <?php if( have_rows('cabinet-slider') ): ?>
+      <div class="slider js-slider">
+        <?php while( have_rows('cabinet-slider') ): the_row(); 
+          $image = get_sub_field('img');
+          $title = get_sub_field('text');
         ?>
-        
-        <?php 
-        if( !empty( $title ) ): ?>
-          <h2 class="section-title"><?php echo $title; ?></h2>
-        <?php endif; ?>
-        <?php 
-        if( !empty( $tx ) ): ?>
-          <div class="section-text"><?php echo $tx; ?></div>
-        <?php endif; ?>
-        
-        <?php 
-        if( !empty( $pdf ) ): 
-        ?>
-          <div class="btn-wrapper">
-            <a class="btn" href="<?php echo $pdf; ?>" target="_blank"><?php echo $link; ?></a>
+          <div class="slider-item">
+            <?php 
+            if( !empty( $image ) ): ?>
+                <img src="<?php echo esc_url($image['sizes']['slider']); ?>" alt="<?php echo esc_attr($image['alt']); ?>"/>
+            <?php endif; ?>
+            <?php 
+            if( !empty( $title ) ): ?>
+              <p class="slider-title"><?php echo $title; ?></p>
+            <?php endif; ?>
           </div>
-        <?php endif; ?>
+        <?php endwhile; ?>
       </div>
+    <?php endif; ?>
 
-      <div class="grid-2-4">
-        <?php 
-        $images = get_field('presentation_img');
-        if( $images ): ?>
-          <div class="presentation-gallery">
-            <?php foreach( $images as $image ): ?>
-              <img src="<?php echo esc_url($image['sizes']['square']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
-            <?php endforeach; ?>
-          </div>
-        <?php endif; ?>
+    <?php 
+    $link = get_field('slider_link');
+    if( !empty( $link ) ): 
+      $link_url = $link['url'];
+      $link_title = $link['title'];
+      $link_target = $link['target'] ? $link['target'] : '_self';
+    ?>
+      <div class="btn-wrapper">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/sep-arrows.svg" alt="" class="sep-arrow">
+        <a class="btn" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>"><?php echo esc_html( $link_title ); ?></a>
       </div>
+    <?php endif; ?>
 
-    </div>
-
-</div>
+  </div>
 </section>
