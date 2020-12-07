@@ -1,4 +1,4 @@
-<section class="section-prices">
+<section class="section-prices" id="tarifs">
   <div class="wrapper">
     <?php 
     $image = get_field('price_img');

@@ -2,6 +2,7 @@
   position: relative;
   min-height: em(570);
   background-size: cover;
+  margin-top: em(-81);
 
   .wrapper {
     @media (max-width: em(1400)) {

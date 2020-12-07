@@ -27,6 +27,13 @@
     });*/
   }
 
+  // Sticky header
+  function stickyHeader() {
+    $('#header').sticky({
+      topSpacing: 0
+    });    
+  }
+
 
   // Init sliders 
   function initSliders() {
@@ -71,6 +78,7 @@
   // INIT
   $(document).ready(function() {
     scrollToAnchor();
+    stickyHeader();
     initSliders();
   });
 

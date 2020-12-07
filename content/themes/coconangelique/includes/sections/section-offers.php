@@ -47,7 +47,7 @@
       </div>  
     </section>
 
-    <section class="offer-section">
+    <section class="offer-section" id="coaching">
       <?php 
         $title = get_field('offer_title_2'); 
         $intro = get_field('offer_intro_2'); 
@@ -93,7 +93,7 @@
       </div>  
     </section>
 
-    <section class="offer-section">
+    <section class="offer-section" id="massage">
       <?php 
         $title = get_field('offer_title_3'); 
         $intro = get_field('offer_intro_3'); 

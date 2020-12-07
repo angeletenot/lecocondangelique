@@ -1,4 +1,6 @@
 header {
+  position: relative;
+  z-index: 10!important;
   padding: em(20) 0;
 
   > .wrapper {
@@ -8,4 +10,11 @@ header {
     align-items: flex-start;
   }
 
+}
+
+
+.is-sticky {
+  header {
+    background: $clr-0-light;
+  }
 }
