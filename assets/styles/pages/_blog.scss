@@ -1,17 +1,92 @@
 .blog-header {
+  position: relative;
+  min-height: em(365);
   text-align: center;
-
-  
-
+  background-size: cover;
+  margin-top: em(-81);
+  padding-top: em(100);
+  .wrapper {
+    @media (max-width: em(1400)) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  .page-subtitle {
+    font-family: $title-font-family-secondary;
+    font-size: em(91);
+    font-weight: 400;
+    color: $clr-light;
+    text-align: center;
+    margin: 0 0 rem(15);
+  }
+  .page-title {
+    font-weight: 400;
+    font-size: em(42);
+    color: $clr-light;
+    letter-spacing: rem(1.2);
+    text-align: center;
+    line-height: 1;
+    margin: 0;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.50);
+  }
 }
 
-
-.blog-content {
-  padding-bottom: em(100);
-  @media (max-width: em(768)) {
-    padding-bottom: 0;
-  }
+.blog-wrapper {
   .section-title {
-    margin-bottom: rem(50);
+    position: relative;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 0 rem(50);
+    &:before,
+    &:after {
+      content: '';
+      position: relative;
+      display: inline-block;
+      vertical-align: middle;
+      height: rem(28);
+      width: rem(256);
+      background-image: url(images/arrow-pink-big.svg);
+      z-index: 2;
+    }
+    &:before {
+      margin-right: rem(85);
+    }
+    &:after {
+      margin-left: rem(85);
+      transform: rotate(180deg);
+    }
+  }
+
+  .blog-content {
+    position: relative;
+    background-color: $clr-0-light;
+    padding: em(50) 0 em(70);
+    overflow: hidden;
+    &:after {
+      content: '';
+      position: absolute;
+      top: em(350);
+      left: em(-250);
+      display: inline-block;
+      height: em(597);
+      width: em(597);
+      background-image: url(images/mandala.png);
+      background-size: cover;
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: em(-400);
+      right: em(-300);
+      display: inline-block;
+      height: em(597);
+      width: em(597);
+      background-image: url(images/mandala.png);
+      background-size: cover;
+    }
+    .wrapper {
+      position: relative;
+      z-index: 1;
+    }
   }
 }

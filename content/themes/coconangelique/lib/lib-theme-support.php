@@ -17,7 +17,8 @@ if ( ! function_exists('custom_theme_features') ) {
      // Set custom thumbnail dimensions
     add_image_size('hero', 1440, 570, true);
     add_image_size('portrait', 425, 540, true);
-    add_image_size('news-thumb', 1200, 490, true);
+    add_image_size('news-thumb', 585, 380, true);
+    add_image_size('news-thumb-lg', 787, 511, true);
     add_image_size('square', 380, 380, true);
     add_image_size('square-lg', 480, 480, true);
     add_image_size('slider', 1440, 704, true);

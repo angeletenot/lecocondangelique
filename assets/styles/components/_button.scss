@@ -4,7 +4,7 @@
   position: relative;
   width: auto;
   margin: 0;
-  padding: rem(7) rem(12);
+  padding: rem(9) rem(20);
   margin: 0;
   position: relative;
   white-space: nowrap;
@@ -47,7 +47,7 @@
   @extend %button;
   &:after {
     content: '';
-    width: calc( 100% - 24px);
+    width: calc( 100% - 32px);
     position: absolute;
     left: 50%;
     bottom: 0;

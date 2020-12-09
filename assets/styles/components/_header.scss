@@ -17,4 +17,11 @@ header {
   header {
     background: $clr-0-light;
   }
+  .menu-list > li  a {
+    color: $clr-0;
+    &:hover,
+    &:focus {
+      color: $clr-0;
+    }
+  }
 }

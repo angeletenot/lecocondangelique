@@ -12,9 +12,10 @@
     a {
       position: relative;
       display: inline-block;
+      color: $clr-light;
       &:hover,
       &:focus {
-        color: initial;
+        color: $clr-light;
       }
       &:hover {
        font-weight: 700;
