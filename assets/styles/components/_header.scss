@@ -8,6 +8,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    @media (max-width: em(990)) {
+      justify-content: flex-end;
+    }
   }
 
 }
@@ -16,6 +19,9 @@ header {
 .is-sticky {
   header {
     background: $clr-0-light;
+    @media (max-width: em(990)) {
+      background: $clr-1;
+    }
   }
   .menu-list > li  a {
     color: $clr-0;

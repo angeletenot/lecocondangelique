@@ -4,6 +4,9 @@ body.home {
   header {
     > .wrapper {
       justify-content: center;
+      @media (max-width: em(990)) {
+        justify-content: flex-end;
+      }
     }
   }
 

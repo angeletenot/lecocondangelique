@@ -12,6 +12,8 @@
   display: flex;
   margin-bottom: em(65);
   @media (max-width: em(768)) {
+    flex-direction: column;
+    align-items: center;
     margin-bottom: em(40);
   }
 
@@ -20,6 +22,11 @@
     flex-direction: column;
     justify-content: space-between;
     padding-left: em(30);
+    @media (max-width: em(768)) {
+      text-align: center;
+      margin-top: rem(20);
+      padding-left: 0;
+    }
   }
 
   .news-title {
@@ -51,6 +58,9 @@
 
   .news-meta {
     margin: em(15) 0;
+    @media (max-width: em(1280)) {
+      margin: em(5) 0;
+    }
   }
 
   .news-date {
@@ -66,6 +76,9 @@
     display: inline-block;
     vertical-align: middle;
     margin: 0;
+    @media (max-width: em(1280)) {
+      display: block;
+    }
     a {
       font-size: em(15);
       @media (max-width: em(768)) {
@@ -75,6 +88,9 @@
         content: '|';
         display: inline-block;
         margin: 0 rem(5);
+        @media (max-width: em(1280)) {
+          display: none;
+        }
       }
     }
   }
@@ -88,6 +104,9 @@
   .news-excerpt {
     font-size: em(15);
     margin-top: rem(40);
+    @media (max-width: em(768)) {
+      margin-top: rem(20);
+    }
     @media (max-width: em(450)) {
       font-size: em(14);
       text-align: center;
@@ -97,7 +116,8 @@
   .btn-wrapper {
     margin-top: em(25);
     text-align: left;
-    .btn {
+    @media (max-width: em(768)) {
+      text-align: center;
     }
   }
 
@@ -120,14 +140,19 @@
       width: 33.333%;
       text-align: center;
       margin: 0 em(15);
-      @media (max-width: em(450)) {
+      padding-bottom: em(50);
+      @media (max-width: em(550)) {
         width: 100%;
-        margin-bottom: em(20);
+        margin: 0 0 em(20);
       }
       .news-thumbnail {
         margin-bottom: em(15);
       }
       .btn-wrapper {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
         text-align: center;
       }
       .news-excerpt {
@@ -142,6 +167,9 @@
   position: relative;
   .news-meta,
   .news-content {
+    @media (max-width: em(768)) {
+      text-align: center;
+    }
     a {
       color: $clr-2;
       &:hover,
@@ -154,6 +182,9 @@
   .news-image {
     margin-top: em(-60);
     text-align: center;
+    @media (max-width: em(990)) {
+      margin-top: em(-40);
+    } 
     img {
       box-shadow: 0px rem(-1) rem(7) 0px rgba(0,0,0,0.5);
     }
@@ -168,6 +199,9 @@
     }
     @media (max-width: em(990)) {
       margin: em(40) 0;
+    }
+    @media (max-width: em(768)) {
+      text-align: center;
     }
   }
 
@@ -200,6 +234,16 @@
     line-height: rem(67);
     text-align: center;
     margin-bottom: rem(10);
+    @media (max-width: em(1280)) {
+      font-size: em(70);
+    } 
+    @media (max-width: em(990)) {
+      font-size: em(55);
+      line-height: 1;
+    }
+    @media (max-width: em(768)) {
+      font-size: em(40);
+    }
   }
 
   .news-content {

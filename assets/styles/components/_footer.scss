@@ -8,6 +8,9 @@
     font-family: $title-font-family-secondary;
     font-size: em(54);
     text-align: center;
+    @media (max-width: em(550)) {
+      font-size: em(30);
+    }
     &:before,
     &:after {
       content: '';
@@ -18,13 +21,24 @@
       width: rem(126);
       background-image: url(images/arrow-brown.png);
       z-index: 2;
+      @media (max-width: em(550)) {
+        width: rem(40);
+        height: rem(9);
+        background-size: 100%;
+      }
     }
     &:before {
       margin-right: rem(50);
+      @media (max-width: em(550)) {
+        margin-right: rem(5);
+      }
     }
     &:after {
       margin-left: rem(50);
       transform: rotate(180deg);
+      @media (max-width: em(550)) {
+        margin-left: rem(5);
+      }
     }
   }
 

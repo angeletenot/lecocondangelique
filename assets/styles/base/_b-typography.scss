@@ -6,11 +6,20 @@ h1 {
 h2 {
   @extend %title;
   font-size: $font-size-XL;
+  @media (max-width: em(1280)) {
+    font-size: em(24);
+  }
 }
 
 h3 {
   @extend %title;
   font-size: $font-size-L;
+  @media (max-width: em(768)) {
+    font-size: em(18);
+  }
+  @media (max-width: em(550)) {
+    font-size: em(17);
+  }
 }
 
 h4 {

@@ -1,16 +1,26 @@
 .section-offers {
   padding: em(20) 0 em(40);
 
+  @media (max-width: em(768)) {
+    text-align: center;
+  }
+
   .offer-section {
     padding: em(25) 0;
     &:nth-child(2) {
       .offer-img {
         margin-left: 0;
         margin-right: auto;
+        @media (max-width: em(768)) {
+          margin-left: auto;
+        }
       }
     }
     .btn {
       margin-top: rem(40);
+      @media (max-width: em(768)) {
+        margin-bottom: rem(40);
+      }
     }
   }
 
@@ -21,6 +31,16 @@
     letter-spacing: rem(1.2);
     text-align: center;
     margin: 0 0 rem(50);
+    @media (max-width: em(1280)) {
+      font-size: em(38);
+    }
+    @media (max-width: em(768)) {
+      font-size: em(28);
+      margin: 0 0 rem(30);
+    }
+    @media (max-width: em(550)) {
+      font-size: em(21);
+    }
     &:before,
     &:after {
       content: '';
@@ -31,13 +51,45 @@
       width: rem(256);
       background-image: url(images/arrow-pink-big.svg);
       z-index: 2;
+      @media (max-width: em(1280)) {
+        width: rem(160);
+        height: rem(18);
+        background-size: 100%;
+      }
+      @media (max-width: em(768)) {
+        width: rem(100);
+        height: rem(12);
+      }
+      @media (max-width: em(550)) {
+        background-image: url(images/arrow-pink.png);
+        width: rem(50);
+        background-repeat: no-repeat;
+      }
     }
     &:before {
       margin-right: rem(85);
+      @media (max-width: em(1280)) {
+        margin-right: rem(50);
+      }
+      @media (max-width: em(768)) {
+        margin-right: rem(30);
+      }
+      @media (max-width: em(550)) {
+        margin-right: rem(10);
+      }
     }
     &:after {
       margin-left: rem(85);
       transform: rotate(180deg);
+      @media (max-width: em(1280)) {
+        margin-left: rem(50);
+      }
+      @media (max-width: em(768)) {
+        margin-left: rem(30);
+      }
+      @media (max-width: em(550)) {
+        margin-left: rem(10);
+      }
     }
   }
 
@@ -49,12 +101,23 @@
     text-align: center;
     line-height: rem(34);
     margin: 0 auto rem(40);
+    @media (max-width: em(1280)) {
+      font-size: em(38);
+      line-height: rem(30);
+    }
+    @media (max-width: em(550)) {
+      font-size: em(28);
+      line-height: rem(24);
+    }
   }
 
   .offer-img {
     display: block;
     margin-left: auto;
     margin-bottom: em(20);
+    @media (max-width: em(768)) {
+      margin-right: auto;
+    }
   }
 
   .offer-text {
@@ -70,6 +133,14 @@
       letter-spacing: 0;
       line-height: rem(30);
       margin: 0 0 rem(25);
+      @media (max-width: em(990)) {
+        font-size: em(24);
+        line-height: rem(28);
+      }
+      @media (max-width: em(550)) {
+        font-size: em(21);
+        line-height: rem(24);
+      }
     }
     img {
       display: block;

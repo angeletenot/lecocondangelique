@@ -149,6 +149,10 @@
         padding: 0;
         margin: rem(3);
         transition: $trans;
+        @media (max-width: em(1280)) {
+            height: rem(12);
+            width: rem(12);
+        }
     }
     li.slick-active,
     li:hover,

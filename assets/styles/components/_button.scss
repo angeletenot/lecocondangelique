@@ -22,6 +22,9 @@
   -webkit-user-drag: none;
   user-select: none;
   -webkit-appearance: none;
+  @media (max-width: em(1280)) {
+    font-size: em(18);
+  }
   &Truncate { @extend %truncate }
   + [class*=button] {
     @media (min-width: $mq-s-up) {

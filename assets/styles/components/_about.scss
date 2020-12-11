@@ -5,6 +5,10 @@
   background-position: em(-53) em(73);
   padding: em(40) 0 em(60);
 
+  @media (max-width: em(768)) {
+    text-align: center;
+  }
+
   .section-tx {
     margin-bottom: rem(50);
   }
@@ -14,6 +18,9 @@
       position: relative;
       box-shadow: -9px -8px 23px 0 rgba(0,0,0,0.48), inset 0 1px 3px 0 rgba(0,0,0,0.50);
       margin-top: em(-160);
+      @media (max-width: em(768)) {
+        margin-bottom: rem(20);
+      }
     }
   }
 

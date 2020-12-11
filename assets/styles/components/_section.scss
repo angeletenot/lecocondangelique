@@ -3,11 +3,17 @@
   font-weight: 400;
   letter-spacing: rem(1.2);
   margin-bottom: rem(10);
+  @media (max-width: em(990)) {
+    font-size: em(35);
+  }
 }
 
 .section-subtitle {
   font-size: em(28);
   font-weight: 400;
+  @media (max-width: em(990)) {
+    font-size: em(24);
+  }
 }
 
 .section-tx {

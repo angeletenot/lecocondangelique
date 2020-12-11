@@ -75,11 +75,30 @@
   }
 
 
+  // Change hamburger state
+  function hamburger(){
+    var hamburger = $(".hamburger");
+    var menu = $(".menu-desktop");
+    var menuItem = $(".menu-list > li a");
+
+    hamburger.on("click", function(e) {
+      hamburger.toggleClass("is-active");
+      menu.toggleClass("is-active");
+    });
+
+    menuItem.on("click", function(e) {
+      hamburger.removeClass("is-active");
+      menu.removeClass("is-active");
+    });
+  }
+
+
   // INIT
   $(document).ready(function() {
     scrollToAnchor();
     stickyHeader();
     initSliders();
+    hamburger();
   });
 
 })( jQuery );

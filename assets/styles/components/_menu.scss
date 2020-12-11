@@ -2,12 +2,23 @@
 .menu-list {
   @extend %list-inline;
   position: relative;
+  text-align: center;
   font-family: $title-font-family;
 
   > li {
     padding: 0 em(30);
+    @media (max-width: em(1280)) {
+      padding: 0 em(20);
+    }
+    @media (max-width: em(990)) {
+      display: block;
+      padding: em(10) 0;
+    }
     > a {
       font-size: em(22);    
+      @media (max-width: em(1280)) {
+        font-size: em(18);
+      }
     }
     a {
       position: relative;
@@ -23,7 +34,30 @@
       }
     }
   }
+}
 
+.menu-desktop {
+  width: 100%;
+  @media (max-width: em(990)) {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: em(450);
+    background-color: $clr-1;
+    padding-top: em(80);
+  }
+  &.is-active {
+    display: block
+  }
+}
+
+.toggle-menu {
+  display: none;
+  @media (max-width: em(990)) {
+    display: block;
+  }
 }
 
 

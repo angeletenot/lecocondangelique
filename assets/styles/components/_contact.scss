@@ -11,6 +11,9 @@
     display: inline-block;
     img {
       max-width: em(440);
+      @media (max-width: em(768)) {
+        max-width: 100%;
+      }
     }
   }
 
@@ -20,6 +23,10 @@
     color: $clr-2;
     line-height: rem(37);
     margin: rem(15) 0 rem(30);
+    @media (max-width: em(990)) {
+      font-size: em(35);
+      line-height: rem(28);
+    }
   }
 
   .contact-tx {

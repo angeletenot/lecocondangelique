@@ -4,6 +4,10 @@
   background-repeat: no-repeat;
   background-position: 125% 187%;
   padding: em(45) 0;
+  @media (max-width: em(550)) {
+    background-image: none;
+    padding-top: 0;
+  }
    &:after {
     content: '';
     display: block;
@@ -33,6 +37,13 @@
         text-align: center;
         text-shadow: 0 rem(2) rem(12) rgba(0,0,0,0.50);
         z-index: 2;
+        @media (max-width: em(1280)) {
+          font-size: em(50);
+        }
+        @media (max-width: em(550)) {
+          top: rem(10);
+          font-size: em(24);
+        }
       }
     }
 
@@ -47,6 +58,13 @@
       font-size: em(60);
       z-index: 2;
       transition: $trans;
+      @media (max-width: em(1280)) {
+        font-size: em(50);
+      }
+      @media (max-width: em(990)) {
+        bottom: 0;
+        font-size: em(40);
+      }
       &:hover {
         color: $clr-2;
       }
@@ -59,6 +77,9 @@
       }
       i {
         vertical-align: baseline;
+        @media (max-width: em(1280)) {
+          vertical-align: middle;
+        } 
       }
     }
     .slick-dots {
@@ -68,6 +89,15 @@
       bottom: em(34);
       text-align: center;
       margin: 0;
+      @media (max-width: em(1280)) {
+        bottom: em(24);
+      }
+      @media (max-width: em(990)) {
+        bottom: em(18);
+      }
+      @media (max-width: em(550)) {
+        display: none;
+      }
     }
   }
 

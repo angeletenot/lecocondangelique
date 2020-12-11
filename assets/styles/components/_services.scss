@@ -11,12 +11,19 @@
     bottom: 0;
     background-color: $clr-0-light;
     z-index: -1;
+    @media (max-width: em(550)) {
+      display: none;
+    }
   }
 
   .services-wrapper {
     display: flex;
     margin-left: em(-15);
     margin-right: em(-15);
+    @media (max-width: em(768)) {
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
   }
 
   .service-item {
@@ -25,6 +32,12 @@
     text-align: center;
     margin: em(15);
     padding-bottom: em(55);
+    @media (max-width: em(768)) {
+      width: 45%;
+    }
+    @media (max-width: em(550)) {
+      width: 100%;
+    }
 
     .service-img-wrapper {
       position: relative;

@@ -24,6 +24,13 @@
         <nav id="navigation" class="main-menu menu menu-desktop">
           <?php nav_header() ?>
         </nav>
+        <div class="js-toggle-menu toggle-menu">
+          <button class="hamburger hamburger--slider" type="button" aria-label="Menu" aria-controls="navigation">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+        </div>
       </div>
     </header>
 

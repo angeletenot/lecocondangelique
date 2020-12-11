@@ -7,6 +7,14 @@
   background: $clr-2;
   padding: rem(20) 0;
 
+  @media (max-width: em(768)) {
+    font-size: em(35);
+  }
+  @media (max-width: em(550)) {
+    font-size: em(28);
+    line-height: rem(24)
+  }
+
   .quote {
     margin: 0;
   }
