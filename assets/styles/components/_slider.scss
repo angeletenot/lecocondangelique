@@ -18,6 +18,9 @@
     bottom: 0;
     background-color: $clr-0-light;
     z-index: -1;
+    @media (max-width: em(550)) {
+      top: em(100);
+    }
   }
 
   .slider {

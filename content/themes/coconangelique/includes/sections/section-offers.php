@@ -20,7 +20,7 @@
         <div class="grid-2-4">
           <?php 
           if( !empty( $tx ) ): ?>
-            <p class="offer-text"><?php echo $tx; ?></p>
+            <div class="offer-text"><?php echo $tx; ?></div>
           <?php endif; ?>
           
           <?php 

@@ -5,8 +5,9 @@
   background-position: em(-53) em(73);
   padding: em(40) 0 em(60);
 
-  @media (max-width: em(768)) {
+  @media (max-width: em(550)) {
     text-align: center;
+    background-image: none;
   }
 
   .section-tx {

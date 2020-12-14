@@ -130,6 +130,7 @@
     h5 {
       font-weight: 400;
       font-size: em(28);
+      font-weight: 400;
       letter-spacing: 0;
       line-height: rem(30);
       margin: 0 0 rem(25);
@@ -144,6 +145,7 @@
     }
     img {
       display: block;
+      max-width: rem(95);
       margin: rem(10) auto;
     }
   }
