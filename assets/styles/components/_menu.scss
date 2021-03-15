@@ -14,6 +14,13 @@
       display: block;
       padding: em(10) 0;
     }
+    &.has-submenu {
+      > a {
+        @media (max-width: em(990)) {
+          color: rgba($clr-light, .6);
+        }
+      }
+    }
     > a {
       font-size: em(22);    
       @media (max-width: em(1280)) {
@@ -27,12 +34,64 @@
       &:hover,
       &:focus {
         color: $clr-light;
+        &:after {
+          opacity: 1;
+        }
       }
-      &:hover {
-       font-weight: 700;
-       margin: 0 rem(-3);
+      &:after {
+        content: '';
+        display: block;
+        width: 100%;
+        border-top: rem(1) solid $clr-1;
+        opacity: 0;
+        transition: all .3s;
+        margin-top: rem(2);
       }
     }
+  }
+
+  .sub-menu {
+    @extend %list-reset;
+    position: absolute;
+    opacity: 0;
+    overflow: hidden;
+    background: $clr-1;
+    margin-top: em(10);
+    padding: em(10) 0;
+    box-shadow: rgba($clr-0-darken, .3) 0 em(2) em(4) 0;
+    transition: all .3s;
+    z-index: -10;
+    @media (max-width: em(990)) {
+      opacity: 1;
+      position: relative;
+      box-shadow: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    &.is-active {
+      opacity: 1;
+      z-index: 10;
+    }
+
+    > li {
+      padding: em(5) em(35);
+      @media (max-width: em(1400)) {
+        padding: em(5) em(20);
+      }
+      a {
+        &:after {
+          border-color: $clr-light;
+        }
+        &:hover:before {
+          opacity: 1;
+        }
+        &:hover {
+         font-weight: 400;
+        }
+      }
+    }
+
   }
 }
 

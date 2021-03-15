@@ -30,6 +30,13 @@ header {
       color: $clr-0;
     }
   }
+  .menu-list > li .sub-menu a {
+    color: $clr-light;
+    &:hover,
+    &:focus {
+      color: $clr-light;
+    }
+  }
   .hamburger:hover .hamburger-inner, 
   .hamburger:hover .hamburger-inner::before, 
   .hamburger:hover .hamburger-inner::after,

@@ -14,7 +14,7 @@
 
   <?php include get_template_directory() . '/includes/sections/section-testimonies.php';  ?>
 
-  <?php include get_template_directory() . '/includes/sections/section-prices.php';  ?>
+  <?php /* include get_template_directory() . '/includes/sections/section-prices.php'; */  ?>
 
   <?php include get_template_directory() . '/includes/sections/section-contact.php';  ?>
 

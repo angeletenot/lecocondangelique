@@ -1,5 +1,19 @@
 (function($) {
 
+  function menuClass() {
+    $('.menu-item').has('.sub-menu').addClass('has-submenu');
+  }
+
+  function showSubmenu() {
+    $('.menu-item').hover(
+      function() {
+        $(this).children('.sub-menu').addClass('is-active'); 
+      }, function() {
+         $(this).children('.sub-menu').removeClass('is-active');
+      }
+    );
+  }
+
 
   // Smooth scroll
   function scrollToAnchor() {
@@ -95,6 +109,8 @@
 
   // INIT
   $(document).ready(function() {
+    menuClass();
+    showSubmenu();
     scrollToAnchor();
     stickyHeader();
     initSliders();
