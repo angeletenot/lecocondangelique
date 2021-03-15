@@ -11,6 +11,9 @@
   @media (max-width: em(990)) {
     min-height: em(300);
   }
+  @media (max-width: em(550)) {
+    background-position: center center;
+  }
   .wrapper {
     @media (max-width: em(1400)) {
       margin-left: auto;
@@ -136,6 +139,12 @@
       width: em(597);
       background-image: url(images/mandala.png);
       background-size: cover;
+      @media (max-width: em(550)) {
+        height: em(300);
+        width: em(300);
+        top: em(200);
+        left: em(-200);
+      }
     }
     &:before {
       content: '';
@@ -147,6 +156,12 @@
       width: em(597);
       background-image: url(images/mandala.png);
       background-size: cover;
+      @media (max-width: em(550)) {
+        height: em(300);
+        width: em(300);
+        bottom: em(-200);
+        right: em(-150);
+      }
     }
     .wrapper {
       position: relative;

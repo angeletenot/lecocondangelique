@@ -19,15 +19,23 @@ header {
 .is-sticky {
   header {
     background: $clr-0-light;
-    @media (max-width: em(990)) {
-      background: $clr-1;
-    }
   }
   .menu-list > li  a {
     color: $clr-0;
+    @media (max-width: em(990)) {
+      color: $clr-light;
+    }
     &:hover,
     &:focus {
       color: $clr-0;
     }
+  }
+  .hamburger:hover .hamburger-inner, 
+  .hamburger:hover .hamburger-inner::before, 
+  .hamburger:hover .hamburger-inner::after,
+  .hamburger-inner, 
+  .hamburger-inner::before, 
+  .hamburger-inner::after {
+    background-color: $clr-2;
   }
 }

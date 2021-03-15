@@ -8,6 +8,12 @@
   .offer-section {
     padding: em(25) 0;
     &:nth-child(2) {
+      .grid {
+        @media (max-width: em(768)) {
+          display: flex;
+          flex-direction: column-reverse;
+        }
+      }
       .offer-img {
         margin-left: 0;
         margin-right: auto;
@@ -145,7 +151,7 @@
     }
     img {
       display: block;
-      max-width: rem(95);
+      max-width: rem(65);
       margin: rem(10) auto;
     }
   }

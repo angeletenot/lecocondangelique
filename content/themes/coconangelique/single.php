@@ -3,7 +3,7 @@
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
   <?php
-  $featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'blog');  
+  $featured_img_url = get_the_post_thumbnail_url(9,'blog');  
   ?>
 
   <div class="blog-header" style="background-image: url('<?php echo $featured_img_url; ?>')">

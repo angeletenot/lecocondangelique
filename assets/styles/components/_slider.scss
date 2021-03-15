@@ -5,7 +5,8 @@
   background-position: 125% 187%;
   padding: em(45) 0;
   @media (max-width: em(550)) {
-    background-image: none;
+    background-size: em(300);
+    background-position: em(180) em(130);
     padding-top: 0;
   }
    &:after {
