@@ -14,13 +14,6 @@
       display: block;
       padding: em(10) 0;
     }
-    &.has-submenu {
-      > a {
-        @media (max-width: em(990)) {
-          color: rgba($clr-light, .6);
-        }
-      }
-    }
     > a {
       font-size: em(22);    
       @media (max-width: em(1280)) {
@@ -80,6 +73,9 @@
         padding: em(5) em(20);
       }
       a {
+        @media (max-width: em(990)) {
+          color: rgba($clr-light, .6);
+        }
         &:after {
           border-color: $clr-light;
         }

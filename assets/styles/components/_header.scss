@@ -32,6 +32,9 @@ header {
   }
   .menu-list > li .sub-menu a {
     color: $clr-light;
+    @media (max-width: em(990)) {
+      color: rgba($clr-light, .6);
+    }
     &:hover,
     &:focus {
       color: $clr-light;

@@ -6,7 +6,7 @@ $baseline = get_field('hero_baseline');
 <section class="section-hero" style="background-image: url(<?php echo $image['sizes']['hero'] ?>);">
   <div class="wrapper hero-content">
     
-    <h1 class="hero-title">Le Cocon d'Angélique</h1>
+    <h1 class="hero-title">Angélique Ventre</h1>
     <?php if( !empty( $baseline ) ): ?>
       <h2 class="hero-baseline"><?php echo $baseline; ?></h2>
     <?php endif; ?> 
