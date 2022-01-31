@@ -1,17 +1,18 @@
 .section-quote {
-  font-family: $title-font-family-secondary;
-  font-size: em(47);
+  font-family: $tertiary-font-family;
+  font-size: em(35);
   color: $clr-light;
   text-align: center;
-  line-height: rem(34);
+  line-height: rem(55);
   background: $clr-2;
   padding: rem(20) 0;
 
-  @media (max-width: em(768)) {
-    font-size: em(35);
+  @media (max-width: em(990)) {
+    font-size: em(25);
+    line-height: rem(45);
   }
   @media (max-width: em(550)) {
-    font-size: em(28);
+    font-size: em(18);
     line-height: rem(24)
   }
 

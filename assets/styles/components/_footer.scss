@@ -5,11 +5,14 @@
 
   .footer-title {
     position: relative;
-    font-family: $title-font-family-secondary;
-    font-size: em(54);
+    font-family: $tertiary-font-family;
+    font-size: em(30);
     text-align: center;
+    @media (max-width: em(990)) {
+      font-size: em(25);
+    }
     @media (max-width: em(550)) {
-      font-size: em(30);
+      font-size: em(19);
     }
     &:before,
     &:after {
@@ -30,14 +33,14 @@
     &:before {
       margin-right: rem(50);
       @media (max-width: em(550)) {
-        margin-right: rem(5);
+        margin-right: rem(15);
       }
     }
     &:after {
       margin-left: rem(50);
       transform: rotate(180deg);
       @media (max-width: em(550)) {
-        margin-left: rem(5);
+        margin-left: rem(15);
       }
     }
   }

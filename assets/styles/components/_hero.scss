@@ -36,17 +36,41 @@
 
 
   .hero-title {
-    font-family: $title-font-family-secondary;
-    font-size: em(91);
+    position: relative;
+    display: block;
+    width: fit-content;
+    //font-family: $title-font-family-secondary;
+    font-family: $tertiary-font-family;
+    font-size: em(80);
     font-weight: 400;
     color: $clr-light;
-    text-align: center;
-    margin: 0 0 rem(15);
+    text-align: left;
+    margin: 0 auto rem(30);
     @media (max-width: em(990)) {
-      font-size: em(70);
+      font-size: em(60);
+      margin-bottom: rem(10);
     }
     @media (max-width: em(550)) {
       font-size: em(40);
+      margin-bottom: rem(5);
+    }
+    span {
+      display: block;
+      font-family: $base-font-family;
+      font-size: rem(45);
+      line-height: rem(65);
+      text-align: right;
+      padding-left: rem(310);
+      @media (max-width: em(990)) {
+        font-size: rem(30);
+        line-height: rem(50);
+        padding-left: rem(250);
+      }
+      @media (max-width: em(550)) {
+        font-size: rem(25);
+        line-height: rem(40);
+        padding-left: rem(170);
+      }
     }
   }
 

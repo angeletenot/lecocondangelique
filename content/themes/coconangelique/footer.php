@@ -3,7 +3,7 @@
 
     <footer class="footer">
       <div class="wrapper">
-        <p class="footer-title">Le Cocon d'Angélique</p>
+        <p class="footer-title">Angélique Ventre</p>
 
         <?php include get_template_directory() . '/includes/tools/socials.php';  ?>
 

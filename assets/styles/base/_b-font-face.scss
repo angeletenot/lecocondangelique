@@ -1,1 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400&family=Oswald:wght@400;700&family=Reenie+Beanie&family=Signika:wght@300&display=swap');
+
+
+@font-face {
+    font-family:"Amsterdam Two";
+    src:url("fonts/amsterdam-two.woff2") format("woff2"),
+    url("fonts/amsterdam-two.woff") format("woff"),
+    url("fonts/amsterdam-two.otf") format("opentype");
+    font-style:normal;font-weight:400;
+}

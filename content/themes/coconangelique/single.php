@@ -8,7 +8,7 @@
 
   <div class="blog-header" style="background-image: url('<?php echo $featured_img_url; ?>')">
     <div class="wrapper">
-      <h2 class="page-subtitle">Le Cocon d'Angélique</h2>
+      <h2 class="page-subtitle">Angélique <span>VENTRE</span></h2>
       <h1 class="page-title"><?php echo get_the_title(9); ?></h1>
     </div>
   </div>

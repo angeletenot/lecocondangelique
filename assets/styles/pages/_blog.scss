@@ -21,17 +21,30 @@
     }
   }
   .page-subtitle {
-    font-family: $title-font-family-secondary;
-    font-size: em(91);
+    display: block;
+    width: fit-content;
+    font-family: $tertiary-font-family;
+    font-size: em(50);
     font-weight: 400;
     color: $clr-light;
-    text-align: center;
-    margin: 0 0 rem(15);
+    text-align: left;
+    margin: 0 auto rem(15);
     @media (max-width: em(990)) {
-      font-size: em(70);
+      //font-size: em(70);
     }
     @media (max-width: em(550)) {
       font-size: em(40);
+    }
+    span {
+      display: block;
+      font-family: $base-font-family;
+      font-size: rem(25);
+      line-height: rem(30);
+      text-align: right;
+      padding-left: rem(200);
+      @media (max-width: em(550)) {
+        padding-left: rem(170);
+      }
     }
   }
   .page-title {
@@ -47,7 +60,7 @@
       font-size: em(28);
     }
     @media (max-width: em(550)) {
-      font-size: em(21);
+      font-size: em(18);
       line-height: 1.3;
     }
   }
