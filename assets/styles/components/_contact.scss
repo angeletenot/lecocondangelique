@@ -18,14 +18,14 @@
   }
 
   .contact-intro {
-    font-family: $tertiary-font-family;
-    font-size: em(30);
+    font-family: $title-font-family-secondary;
+    font-size: em(47);
     color: $clr-2;
-    line-height: rem(65);
+    line-height: rem(37);
     margin: rem(15) 0 rem(30);
     @media (max-width: em(990)) {
-      font-size: em(25);
-      line-height: rem(55);
+      font-size: em(35);
+      line-height: rem(28);
     }
   }
 

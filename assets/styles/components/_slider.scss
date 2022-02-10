@@ -35,18 +35,18 @@
         top: rem(60);
         left: rem(70);
         right: rem(70);
-        font-family: $tertiary-font-family;
-        font-size: em(55);
+        font-family: $title-font-family-secondary;
+        font-size: em(72);
         color: $clr-light;
         text-align: center;
         text-shadow: 0 rem(2) rem(12) rgba(0,0,0,0.50);
         z-index: 2;
         @media (max-width: em(1280)) {
-          font-size: em(30);
+          font-size: em(50);
         }
         @media (max-width: em(550)) {
           top: rem(10);
-          font-size: em(21);
+          font-size: em(24);
         }
       }
     }

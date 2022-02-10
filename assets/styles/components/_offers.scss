@@ -101,15 +101,15 @@
 
   .offer-intro {
     max-width: rem(930);
-    font-family: $tertiary-font-family;
-    font-size: em(35);
+    font-family: $title-font-family-secondary;
+    font-size: em(47);
     color: $clr-2;
     text-align: center;
-    line-height: rem(55);
+    line-height: rem(34);
     margin: 0 auto rem(40);
     @media (max-width: em(1280)) {
-      font-size: em(30);
-      line-height: rem(55);
+      font-size: em(38);
+      line-height: rem(30);
     }
     @media (max-width: em(550)) {
       font-size: em(28);
